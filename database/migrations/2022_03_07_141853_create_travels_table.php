@@ -22,7 +22,7 @@ class CreateTravelsTable extends Migration
             $table->string("destination",100);
             // tipo del pacchetto
             $table->string("type",100);
-            // prezzo
+            // prezzo (immaginando sia un intero a cifra tonda)
             $table->mediumInteger("price");
         });
     }
