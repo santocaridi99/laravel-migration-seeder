@@ -16,7 +16,7 @@ class UpdateTravelsTable extends Migration
         Schema::table('travels', function (Blueprint $table) {
             //aggiunto colonna bonus famiglia
             $table->boolean("familyBonus")->after("destination")->nullable();
-            // provo il change dicendo che il pacchetto deve essere max 40 righe
+            // provo il change ,dicendo che il pacchetto deve essere max 40 caratteri
             $table->string("package", 40)->change();
         });
     }

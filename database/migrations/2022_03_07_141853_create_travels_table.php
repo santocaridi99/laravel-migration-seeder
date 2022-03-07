@@ -14,6 +14,7 @@ class CreateTravelsTable extends Migration
     public function up()
     {
         Schema::create('travels', function (Blueprint $table) {
+            // id e time stamp li genera in automatico
             $table->id();
             $table->timestamps();
             // nome pacchetto

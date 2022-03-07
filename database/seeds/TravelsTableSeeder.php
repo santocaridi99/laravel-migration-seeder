@@ -15,11 +15,11 @@ class TravelsTableSeeder extends Seeder
     {
         for ($i = 0; $i < 10; $i++) {
             $travel = new Travel();
-            // nome pacchetto fake do nomi femminli
+            // nome pacchetto fake, do nomi femminli
             $travel->package = $faker->firstNameFemale();
-            // destinazione do una nazione
+            // destinazione ci passo un nome di nazione random
             $travel->destination = $faker->country();
-            // bonus
+            // bonus famiglia che è un booleano
             $travel->familyBonus = $faker->boolean();
             // tipo di pacchetto
             // lunghezza di tre parole
